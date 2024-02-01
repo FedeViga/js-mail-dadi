@@ -7,19 +7,11 @@ stampa un messaggio appropriato sull’esito del controllo.
 */
 
 
-// inizializzo array con le email
+// inizializzo costanti e variabili
 const emails =  ["albusdumbledore@hogwarts.wiz", "nevillelongbottom@hogwarts.wiz", "hermionegranger@hogwarts.wiz", "harrypotter@hogwarts.wiz", "ronaldweasley@hogwarts.wiz", "ginnyweasley@hogwarts.wiz", "minervamcgonagall@hogwarts.wiz"];
-console.log(emails)
-
-// inizializzo inputElement
 const inputElement = document.querySelector("#input");
-console.log(inputElement);
-
-// inizializzo buttonElement
 const buttonElement = document.querySelector("#my_button");
-console.log(buttonElement);
-
-// creo variabile di controllo
+const resultElement = document.querySelector("#result");
 let login = false;
 
 // scrivo funzione che al click del bottone controlla se la mail inserita dall'utente è presente nell'array
@@ -30,6 +22,13 @@ buttonElement.addEventListener('click',
                 login = true;
             }
         }
-        console.log(login);
+        
+        // stampo risultato del login
+        if (login == true) {
+            resultElement.innerHTML = "Alohomora!";
+        } else {
+            resultElement.innerHTML = "Expelliarmus!";
+        }
+        login = false;
     }
 )

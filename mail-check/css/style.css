@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    background-image: var(--bs-gradient);
+}
+
+img {
+    width: 200px;
+}
+
+.my_col {
+    background-color: #700D1F;
+}
+
+#result {
+    font-weight: bold;
+    font-size: 2em;
+}

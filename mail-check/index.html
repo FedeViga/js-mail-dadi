@@ -14,13 +14,32 @@
     <title>Mail</title>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark text-white">
 
-    <div class="container">
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="input" placeholder="name@example.com">
-            <label for="input">Email address</label>
-            <button id="my_button" type="button" class="btn btn-outline-light">Light</button>
+    <div class="container px-2 py-5">
+
+        <div class="my_col col-8 m-auto shadow-lg border border-black rounded-5 px-4 py-5">
+
+            <img class="img-fluid mx-auto d-block" src="https://logolook.net/wp-content/uploads/2021/12/Gryffindor-Logo.svg" alt="logo Gryffindor">
+
+            <h1 class="text-center mb-5 ">
+                Gryffindor House Login
+            </h1>
+            
+            <div class="row g-2 mb-5">
+                
+                <label for="input" class="form-label">Insert your Hogwartz email</label>
+                <div class="col mt-0">
+                    <input type="email" class="form-control" id="input" aria-describedby="emailHelp" placeholder="name@hogwartz.wiz">
+                </div>
+                <div class="col-auto mt-0">
+                    <button id="my_button" type="button" class="btn btn-outline-light">Login</button>
+                </div>
+            </div>
+            <div id="result" class="text-center">
+        
+            </div>
+
         </div>
     </div>
 

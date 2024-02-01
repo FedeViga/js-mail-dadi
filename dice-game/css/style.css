@@ -1,0 +1,22 @@
+body {
+    height: 100vh;
+}
+
+.my_col, body {
+    background-image: var(--bs-gradient);
+}
+
+.my_col {
+    border: 2px solid black;
+}
+
+.dice {
+    font-weight: bold;
+    font-size: 3em;
+
+}
+
+.result {
+    font-size: 2em;
+    font-weight: bold;
+}
